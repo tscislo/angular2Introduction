@@ -1,12 +1,12 @@
 <md-card class="space">
   <md-card-title>
-    <!-- name goes here -->
+    {{person.surname}}
   </md-card-title>
   <md-card-subtitle>
-    <!-- surname goes here -->
+    {{person.name}}
   </md-card-subtitle>
-  <button md-mini-fab>
-    <md-icon></md-icon>
+  <button md-mini-fab (click)="removePerson(person)">
+    <md-icon>delete</md-icon>
   </button>
 </md-card>
 

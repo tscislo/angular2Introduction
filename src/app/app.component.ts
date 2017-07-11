@@ -1,4 +1,5 @@
 import {Component} from '@angular/core';
+import * as _ from "lodash";
 
 @Component({
   selector: 'app-root',
@@ -26,5 +27,9 @@ export class AppComponent {
       surname: 'Abacki'
     }
   ]
+
+  public onPersonRemove(_person) {
+    _.remove(this.people, (person) => person === _person)
+  }
 
 }
